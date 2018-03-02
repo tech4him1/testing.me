@@ -37,6 +37,11 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
+      - name: "raw"
+        label: "Raw File"
+        file: "_data/test.txt"
+        fields:
+          - {label: "Content", name: "body", widget: "text"}
       - name: "general"
         label: "Site Settings"
         file: "_data/settings.json"
